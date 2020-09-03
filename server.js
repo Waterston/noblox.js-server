@@ -18,8 +18,8 @@ let express = require("express");
 let BodyParser = require("body-parser");
 
 // Configs
-
-let config = require("./config.json"); // Stores configurations, such as login cookie
+//let config = require("./config.json"); // Stores configurations, such as login cookie
+//We are using environment variables for this, not the config.json file.
 
 // Modules
 
@@ -104,7 +104,7 @@ app.use((err, req, res, next) => {
 });
 
 async function login() {
-    await roblox.setCookie(process.env.user_cookie); // thanks for ruining logins roblox
+    await roblox.setCookie(process.env.user_cookie);
     return await roblox.getCurrentUser();
 }
 
