@@ -8,7 +8,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/Hamzah-z/noblox.js-server"
+        "url": "https://github.com/Waterston/noblox.js-server"
     },
     "author": "H_mzah <https://www.roblox.com/users/14398127/profile>",
     "license": "MIT",
@@ -19,7 +19,7 @@
         "noblox.js": "4.6.1"
     },
     "bugs": {
-        "url": "https://github.com/suufi/noblox.js-server/issues"
+        "url": "https://github.com/Waterston/noblox.js-server/issues"
     },
-    "homepage": "https://github.com/Hamzah-z/noblox.js-server"
+    "homepage": "https://github.com/Waterston/noblox.js-server"
 }
