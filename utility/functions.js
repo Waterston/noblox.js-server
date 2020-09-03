@@ -6,7 +6,7 @@ function SendResponse(res, json, status) { // Function for ease of sending respo
 }
 
 function Authenticate(req, res, next_func) {
-	if (req.body.auth_key === config.auth_key) { // Does the request's key match the key in our config?
+	if (req.body.auth_key === process.env.auth_key) { // Does the request's key match the key in our config or environment variable?
 		next_func();
 	} else {
 		SendResponse(res, { error: 'Incorrect authentication key.' }, 401)
@@ -22,8 +22,8 @@ function CheckRank(request) {
 			if (rank === 0) { // 0 means 'Guest' aka not in group
 				throw new Error('Target user ' + TargetUser + ' is not in group ' + Group);
 			}
-			if (rank > config.maximum_rank) { // Can't promote them because their rank is higher than our config.maximum_rank
-				throw new Error('Original rank ' + rank + ' is above rank limit ' + config.maximum_rank);
+			if (rank > process.env.maximum_rank) { // Can't promote them because their rank is higher than our config.maximum_rank
+				throw new Error('Original rank ' + rank + ' is above rank limit ' + process.env.maximum_rank);
 			}
 			return rank;
 		});
