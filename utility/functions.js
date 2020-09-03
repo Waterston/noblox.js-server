@@ -1,5 +1,5 @@
 let roblox = require('noblox.js')
-let config = require('../config.json')
+//let config = require('../config.json')
 
 function SendResponse(res, json, status) { // Function for ease of sending response
 	res.status(status).send(json);
