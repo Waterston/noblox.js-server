@@ -3,7 +3,7 @@
 
 This is an improved example server that uses the [noblox.js](https://github.com/suufi/noblox.js) library, allowing users to execute site actions from in-game via HttpService.
 
-## Instructions~~
+## Instructions
 
 Go to your environment variables settings and set `user_cookie` to the .ROBLOSECURITY cookie of the account you want to use. 
 - The `auth_key` field is essentially a password for the site (to prevent strangers from accessing account functions). Ensure that it is an unique and randomly generated password.
